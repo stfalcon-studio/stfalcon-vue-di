@@ -23,8 +23,5 @@
   "homepage": "https://github.com/stfalcon-studio/vue-di#readme",
   "peerDependencies": {
     "vue": "2.6.10"
-  },
-  "devDependencies": {
-    "babel-eslint": "10.0.2"
   }
 }
