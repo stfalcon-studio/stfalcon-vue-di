@@ -1,0 +1,27 @@
+{
+  "name": "vue-di",
+  "version": "1.0.0",
+  "description": "Lightweight dependency injection library for Vue.js",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stfalcon-studio/vue-di.git"
+  },
+  "keywords": [
+    "vue",
+    "di",
+    "dependency injection"
+  ],
+  "author": "Dmytro Tolok <tolok.d@gmail.com> (https://stfalcon.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stfalcon-studio/vue-di/issues"
+  },
+  "homepage": "https://github.com/stfalcon-studio/vue-di#readme",
+  "peerDependencies": {
+    "vue": "2.6.10"
+  }
+}
