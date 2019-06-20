@@ -22,7 +22,7 @@ npm install stfalcon-vue-di
 ### Include to the app
 
 In `main.js` file
-```vue
+```js
 ...
 import modules from './modules';
 
@@ -34,7 +34,7 @@ new Vue({
 ```
 
 In `modules.js` file
-```vue
+```js
 import Vue from 'vue';
 import DI from 'stfalcon-vue-di';
 
@@ -48,7 +48,7 @@ export default {
 ```
 
 In `uiLib` module file
-```vue
+```js
 import Button from './Button.vue';
 
 export default {
@@ -57,7 +57,7 @@ export default {
 ```
 
 ### Inject to component
-```vue
+```js
 import { mapComponents } from 'stfalcon-vue-di';
 
 export default {
@@ -74,7 +74,7 @@ stfalcon-vue-di exports vue plugin and additional utils for working with it.
 
 #### setting up
 To use plugin you need to specify it, follow the vue way:
-```vue
+```js
 import Vue from 'vue';
 import DI from 'stfalcon-vue-di';
 
@@ -82,7 +82,7 @@ Vue.use(DI);
 ```
 #### module creation
 Each module contains an object with specified components. So for creating a new module, you can just create a bunch of vue components and gather them into one object:
-```vue
+```js
 import Button from './Button.vue';
 import Input from './Input.vue';
 
@@ -94,7 +94,7 @@ export default {
 
 #### module connection
 You need to connect module to the Vue component in module parameter
-```vue
+```js
 import module from './some-module-file';
 
 export default {
@@ -106,7 +106,7 @@ export default {
 }
 ```
 Module name is the namespace for components. It means that you can use the same component or component name in different modules
-```vue
+```js
 import Button from './Button';
 
 const module1 = {
@@ -138,7 +138,7 @@ You can inject any component from DI to your component, using util `mapComponent
  - `componentsObject: { [componentName: string]: InjectedComponent<Component> }`
 
 As you can see, this util provides flexible interface for DI:
-```vue
+```js
 import CustomButton from './lib/CustomButton';
 
 export default {
