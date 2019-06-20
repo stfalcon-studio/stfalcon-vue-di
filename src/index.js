@@ -4,7 +4,7 @@ export { mapComponents } from './utils'
 
 export default class DI {}
 
-DI.install = function install(vm) {
-  vm.mixin({ beforeCreate: buildModuleStructure });
+DI.install = function install(vm, options) {
+  vm.mixin({ beforeCreate: buildModuleStructure(options) });
 };
 
